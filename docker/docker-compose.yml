@@ -1,0 +1,16 @@
+services:
+  mysql-db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: traffic1!
+      MYSQL_DATABASE: traffic-db
+      MYSQL_USER: traffic-user
+      MYSQL_PASSWORD: traffic1!
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
