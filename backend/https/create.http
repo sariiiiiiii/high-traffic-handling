@@ -1,9 +1,9 @@
 ### create user
-POST localhost:8080/api/users
+POST localhost:8080/api/users/signUp
 Content-Type: application/json
 
 {
-  "username": "sarii",
-  "password": "sari",
+  "username": "sari",
+  "password": "sari123",
   "email": "sari@sari.com"
 }
